@@ -1,0 +1,7 @@
+apiVersion: metering.openshift.io/v1alpha1
+kind: RecoverReport
+metadata:
+  name: recoverreport-sample
+spec:
+  selector:
+  - 'metering.openshift.io/schedule: daily'

@@ -1,0 +1,6 @@
+apiVersion: metering.openshift.io/v1alpha1
+kind: PruneReport
+metadata:
+  name: prunereport-sample
+spec:
+  foo: bar

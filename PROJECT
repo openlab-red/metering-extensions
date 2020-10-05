@@ -1,0 +1,11 @@
+domain: openshift.io
+layout: ansible.sdk.operatorframework.io/v1
+projectName: metering-extensions
+resources:
+- group: metering
+  kind: RecoverReport
+  version: v1alpha1
+- group: metering
+  kind: PruneReport
+  version: v1alpha1
+version: 3-alpha

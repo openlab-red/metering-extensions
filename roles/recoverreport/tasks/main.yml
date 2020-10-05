@@ -1,0 +1,8 @@
+---
+# tasks file for RecoverReport
+- name: 
+
+- name: Fetch Report with label selector
+  set_fact:
+    report: "{{ lookup('community.kubernetes.k8s', kind='Service', label_selector=item) }}"
+  loop: '{{ selector }}' 

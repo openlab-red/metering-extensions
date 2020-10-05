@@ -1,0 +1,24 @@
+# permissions for end users to edit recoverreports.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: recoverreport-editor-role
+rules:
+- apiGroups:
+  - metering.openshift.io
+  resources:
+  - recoverreports
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - metering.openshift.io
+  resources:
+  - recoverreports/status
+  verbs:
+  - get

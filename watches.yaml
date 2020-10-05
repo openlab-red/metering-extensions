@@ -1,0 +1,11 @@
+---
+# Use the 'create api' subcommand to add watches to this file.
+- version: v1alpha1
+  group: metering.openshift.io
+  kind: RecoverReport
+  role: recoverreport
+- version: v1alpha1
+  group: metering.openshift.io
+  kind: PruneReport
+  role: prunereport
+# +kubebuilder:scaffold:watch
